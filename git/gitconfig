@@ -2,7 +2,7 @@
         name = yeyong.yu
         email = yeyong.yu@graviti.com
 [core]
-	editor = vim
+        editor = vim
 [push]
         default = simple
 [pull]
