@@ -1,0 +1,29 @@
+[user]
+        name = yeyong.yu
+        email = yeyong.yu@graviti.com
+[core]
+	editor = vim
+[push]
+        default = simple
+[pull]
+        rebase = true
+[diff]
+        tool = vimdiff
+[difftool]
+        prompt = false
+        trustExitCode = true
+[difftool "vimdiff"]
+        path = vim
+        cmd = "$merge_tool_path" -R -f -d -c 'cd $GIT_PREFIX' "$REMOTE" "$LOCAL"
+[merge]
+        tool = vimdiff
+[mergetool]
+        prompt = false
+        trustExitCode = true
+[mergetool "vimdiff"]
+        path = vim
+[alias]
+        graph = log --graph --oneline --decorate
+[help]
+        autocorrect = 1
+
