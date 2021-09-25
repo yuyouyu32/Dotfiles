@@ -15,6 +15,9 @@ plugins=(
         zsh-autosuggestions
 	zsh-syntax-highlighting
 )
+# SSR proxy
+export http_proxy="http://127.0.0.1:12333"
+export https_proxy="http://127.0.0.1:12333"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -36,6 +39,9 @@ export HOMEBREW_NO_AUTO_UPDATE=true
 
 # source .zprofile
 source ~/.zprofile
+
+export TERM=xterm-256color
+export EDITOR=vim
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
